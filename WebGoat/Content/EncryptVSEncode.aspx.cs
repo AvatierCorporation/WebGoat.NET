@@ -15,7 +15,7 @@ namespace OWASP.WebGoat.NET
     {
 		enum WG_Hash {Sha1=1, Sha256};
 		    
-        private string password = "123456";
+       // private readonly string password = "123456";
         private string hardCodedKey = "key";
 
         protected void Page_Load(object sender, EventArgs e)
@@ -87,7 +87,7 @@ namespace OWASP.WebGoat.NET
     	{
     		byte[] bytes = System.Text.ASCIIEncoding.ASCII.GetBytes(s);
 			byte[] result;
-            HashAlgorithm sha;
+            HashAlgorithm sha = null;
 			switch(hash){
 				case WG_Hash.Sha1:
 					sha = new SHA1Managed();
