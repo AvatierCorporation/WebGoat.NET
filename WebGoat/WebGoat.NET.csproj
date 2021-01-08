@@ -1028,7 +1028,6 @@
     <None Include="Downloads\csrf.pdf" />
     <None Include="Downloads\transport_layer.pdf" />
     <None Include="Downloads\architecture.pdf" />
-    <None Include="packages.config" />
     <None Include="TODO.txt" />
     <None Include="DB_Scripts\create_webgoatcoins.sql" />
     <None Include="DB_Scripts\load_webgoatcoins.sql" />
@@ -1047,10 +1046,6 @@
     <None Include="DB_Scripts\datafiles\securityquestions.txt" />
     <None Include="DB_Scripts\products\.DS_Store" />
     <None Include="App_Data\XmlInjectionUsers.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="..\packages\SecurityCodeScan.3.5.3.0\analyzers\dotnet\SecurityCodeScan.dll" />
-    <Analyzer Include="..\packages\SecurityCodeScan.3.5.3.0\analyzers\dotnet\YamlDotNet.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v16.0\WebApplications\Microsoft.WebApplication.targets" />
 </Project>
